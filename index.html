@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-MY">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星火计划·2026大马旅游年颁奖盛典 - 崛起 x 大众点评</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --dp-orange: #ff6600;
+            --rise-green: #006165; /* 崛起品牌色 */
+            --gold: #d4af37;
+        }
+        /* 渐变背景：融合双方品牌色 */
+        .bg-brand-gradient {
+            background: linear-gradient(135deg, var(--rise-green) 0%, #004a4d 100%);
+        }
+        .text-orange-dp { color: var(--dp-orange); }
+        .text-rise-green { color: var(--rise-green); }
+        .bg-rise-green { background-color: var(--rise-green); }
+        
+        .gradient-gold {
+            background: linear-gradient(135deg, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        /* 复合按钮：从崛起绿到点评橙的过渡 */
+        .btn-joint {
+            background: linear-gradient(90deg, var(--rise-green), var(--dp-orange));
+            background-size: 200% auto;
+            transition: 0.5s;
+        }
+        .btn-joint:hover {
+            background-position: right center;
+        }
+        .hero-mask {
+            background: linear-gradient(rgba(0, 41, 43, 0.8), rgba(0, 20, 20, 0.9)), url('https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&q=80&w=1920');
+            background-size: cover;
+            background-position: center;
+        }
+        /* 视频容器的视觉平权 */
+        .video-border {
+            border: 4px solid var(--rise-green);
+            box-shadow: 0 0 20px rgba(0, 97, 101, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans text-gray-800">
+
+    <header class="fixed w-full z-50 bg-black/80 backdrop-blur-md py-4">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="text-white font-bold text-xl md:text-2xl tracking-tighter flex items-center gap-3">
+                <span class="text-white">崛起</span>
+                <span class="text-gray-500 font-light">|</span>
+                <span class="text-orange-dp">大众点评</span>
+            </div>
+            <a href="#booking" class="bg-rise-green text-white px-5 py-2 rounded-full font-bold text-sm hover:bg-[#ff6600] transition-colors duration-500">立即报名</a>
+        </div>
+    </header>
+
+    <section class="hero-mask h-screen flex items-center justify-center text-center text-white px-6">
+        <div class="max-w-4xl pt-20">
+            <div class="inline-block border border-gold px-4 py-1 rounded-full mb-6 text-gold font-semibold tracking-widest text-sm bg-black/20">
+                🇲🇾 2026 马来西亚旅游年 · 联合战略招募
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
+                抢占中国游客流量 <br>
+                <span class="gradient-gold text-5xl md:text-7xl">赢在2026颁奖盛典</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
+                由<span class="text-white font-bold">崛起商学院</span>深度赋能，入驻大众点评口碑榜。1月20日吉隆坡，让您的品牌成为中国游客首选。
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="#booking" class="btn-joint text-white px-10 py-4 rounded-xl text-xl font-bold shadow-2xl">
+                    锁定颁奖礼席位
+                </a>
+                <a href="#agenda" class="bg-white/10 backdrop-blur hover:bg-white/20 px-10 py-4 rounded-xl text-xl font-bold transition">
+                    查看活动流程
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">为什么您必须参加这场盛典？</h2>
+            <div class="w-20 h-1 bg-rise-green mx-auto"></div>
+        </div>
+        <div class="grid md:grid-cols-4 gap-8">
+            <div class="bg-white p-8 rounded-2xl shadow-lg border-b-4 border-rise-green hover:-translate-y-2 transition">
+                <div class="text-4xl text-rise-green mb-4"><i class="fas fa-award"></i></div>
+                <h3 class="font-bold text-xl mb-2">崛起授勋</h3>
+                <p class="text-gray-600">联合颁发官方认证书，确立行业数字化领航地位。</p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-lg border-b-4 border-orange-dp hover:-translate-y-2 transition">
+                <div class="text-4xl text-orange-dp mb-4"><i class="fas fa-users-viewfinder"></i></div>
+                <h3 class="font-bold text-xl mb-2">流量曝光</h3>
+                <p class="text-gray-600">解锁大众点评搜索入口，精准触达1.4亿中国客群。</p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-lg border-b-4 border-rise-green hover:-translate-y-2 transition">
+                <div class="text-4xl text-rise-green mb-4"><i class="fas fa-graduation-cap"></i></div>
+                <h3 class="font-bold text-xl mb-2">崛起干货</h3>
+                <p class="text-gray-600">商学院独家营销课程，实战解析如何锁死高净值流量。</p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-lg border-b-4 border-orange-dp hover:-translate-y-2 transition">
+                <div class="text-4xl text-orange-dp mb-4"><i class="fas fa-handshake"></i></div>
+                <h3 class="font-bold text-xl mb-2">官方对接</h3>
+                <p class="text-gray-600">与旅游局及商界大咖面对面，掌握2026旅游年一手资源。</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-zinc-900">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-8 text-white"><span class="gradient-gold">往届活动盛况回顾</span></h2>
+            <div class="max-w-4xl mx-auto video-border rounded-3xl overflow-hidden">
+                <div class="aspect-video">
+                    <iframe 
+                        width="100%" 
+                        height="100%" 
+                        src="https://www.youtube.com/embed/25rKK8LY2ho" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking" class="py-20 bg-brand-gradient text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">选择您的参与席位</h2>
+                <p class="text-orange-200">所有席位均包含崛起商学院特供资料及 500元 广告抵用券</p>
+            </div>
+            <div class="flex flex-col md:flex-row justify-center gap-8 max-w-5xl mx-auto">
+                <div class="flex-1 bg-white/10 border border-white/20 p-8 rounded-3xl relative">
+                    <h3 class="text-2xl font-bold mb-4">VIP 观察员席</h3>
+                    <div class="text-4xl font-bold mb-6 text-orange-dp">RM 1XX <span class="text-sm font-normal text-gray-300">/ 人</span></div>
+                    <ul class="space-y-4 mb-10 text-gray-200">
+                        <li><i class="fas fa-check text-orange-dp mr-2"></i> 现场标准座位席</li>
+                        <li><i class="fas fa-check text-orange-dp mr-2"></i> 数字化营销白皮书</li>
+                        <li><i class="fas fa-check text-orange-dp mr-2"></i> 500元 广告投放抵用券</li>
+                        <li><i class="fas fa-check text-orange-dp mr-2"></i> 行业交流下午茶</li>
+                    </ul>
+                    <button class="w-full border border-white/30 text-white py-4 rounded-xl font-bold hover:bg-white hover:text-rise-green transition">立即预订</button>
+                </div>
+                <div class="flex-1 bg-white p-1 rounded-3xl shadow-2xl relative scale-105">
+                    <div class="bg-gray-900 p-8 rounded-[1.4rem]">
+                        <div class="absolute top-0 right-10 bg-orange-dp text-white px-4 py-1 rounded-b-lg font-bold text-xs">HOT</div>
+                        <h3 class="text-2xl font-bold mb-4 gradient-gold">VVIP 领航奖席</h3>
+                        <div class="text-4xl font-bold mb-6 text-orange-dp">RM XXX <span class="text-sm font-normal text-gray-400">/ 人</span></div>
+                        <ul class="space-y-4 mb-10 text-gray-300 text-left">
+                            <li><i class="fas fa-star text-gold mr-2"></i> <b class="text-white">现场上台领奖 & 崛起联合认证书</b></li>
+                            <li><i class="fas fa-check text-rise-green mr-2"></i> 尊享前排桌位 (含商务笔纸)</li>
+                            <li><i class="fas fa-check text-rise-green mr-2"></i> 崛起专家 1对1 运营诊断</li>
+                            <li><i class="fas fa-check text-rise-green mr-2"></i> 优先入选官方重点榜单</li>
+                        </ul>
+                        <button class="w-full btn-joint text-white py-4 rounded-xl font-bold text-lg shadow-xl">抢订颁奖名额</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black text-gray-500 py-12 text-center border-t border-white/5">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-center items-center gap-4 mb-6">
+                <span class="text-white font-bold italic">崛起商学院</span>
+                <span class="text-gray-700">✖</span>
+                <span class="text-orange-dp font-bold italic">大众点评</span>
+            </div>
+            <p class="mb-2">指导单位：马来西亚旅游局 (Tourism Malaysia)</p>
+            <p class="text-sm">© 2025 大马旅游年星火计划. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
